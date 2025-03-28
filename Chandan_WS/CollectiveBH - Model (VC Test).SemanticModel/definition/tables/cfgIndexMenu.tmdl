@@ -1,0 +1,68 @@
+table cfgIndexMenu
+	lineageTag: bcdd168b-d974-485c-84f7-d882e4bc9fc7
+
+	column IdReport
+		dataType: int64
+		formatString: 0
+		lineageTag: 0b5c8e90-5c8f-4741-b436-cda772baa09a
+		summarizeBy: sum
+		sourceColumn: IdReport
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportName
+		dataType: string
+		lineageTag: a7236158-6a2d-4f0b-b6c8-d77f7738cf30
+		summarizeBy: none
+		sourceColumn: ReportName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Link
+		dataType: string
+		lineageTag: 8244b432-8713-46e9-a80f-1e27a02a12b2
+		summarizeBy: none
+		sourceColumn: Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column PageName
+		dataType: string
+		lineageTag: 045e5c3e-b24a-4202-87e4-e55bd0717c1b
+		summarizeBy: none
+		sourceColumn: PageName
+		sortByColumn: PageSort
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column PageSort
+		dataType: int64
+		formatString: 0
+		lineageTag: 06b12977-3b23-4779-ad9b-bb8de94e6452
+		summarizeBy: sum
+		sourceColumn: PageSort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comments
+		dataType: string
+		lineageTag: 9376a9bb-6446-4192-9160-68fb17945532
+		summarizeBy: none
+		sourceColumn: Comments
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cfgIndexMenu-8c32cc1a-6b4c-4f9c-90cc-226f47310655 = m
+		mode: import
+		queryGroup: CFGs
+		source =
+				let
+				    Source = Sql.Database("azr-cbh-use1-sql-server01.database.windows.net", "CollectiveBH"),
+				    dbo_cfgIndexMenu = Source{[Schema="dbo",Item="cfgIndexMenu"]}[Data]
+				in
+				    dbo_cfgIndexMenu
+
+	annotation PBI_ResultType = Exception
+

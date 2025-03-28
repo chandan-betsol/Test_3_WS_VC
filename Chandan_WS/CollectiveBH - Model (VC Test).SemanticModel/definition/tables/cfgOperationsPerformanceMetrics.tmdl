@@ -1,0 +1,48 @@
+table cfgOperationsPerformanceMetrics
+	lineageTag: cd4df459-cca5-4591-90e0-9ae5f9d27517
+
+	column Index
+		dataType: int64
+		formatString: 0
+		lineageTag: c3999aa0-08f8-4018-bc62-e8bd6d7b1664
+		summarizeBy: sum
+		sourceColumn: Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column Performance_Metric
+		dataType: string
+		lineageTag: 7e479530-f89f-42ed-b23e-01a41166aa13
+		summarizeBy: none
+		sourceColumn: Performance_Metric
+
+		annotation SummarizationSetBy = Automatic
+
+	column Baseline
+		dataType: string
+		lineageTag: 46ed50ab-9a8f-49a0-9c78-9e5c52009dfc
+		summarizeBy: none
+		sourceColumn: Baseline
+
+		annotation SummarizationSetBy = Automatic
+
+	column Final
+		dataType: string
+		lineageTag: de9b4404-b76c-42e0-be56-e43a53b2e017
+		summarizeBy: none
+		sourceColumn: Final
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cfgOperationsPerformanceMetrics = m
+		mode: import
+		queryGroup: CFGs
+		source =
+				let
+				    Source = Sql.Database(ServerName, DBName),
+				    dbo_cfgOperationsPerformanceMetrics = Source{[Schema="dbo",Item="cfgOperationsPerformanceMetrics"]}[Data]
+				in
+				    dbo_cfgOperationsPerformanceMetrics
+
+	annotation PBI_ResultType = Exception
+
