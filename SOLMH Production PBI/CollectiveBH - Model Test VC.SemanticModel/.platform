@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "CollectiveBH - Model Test VC"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ebb9d6ec-71f5-9a3b-42e0-bad8fe5479a4"
+  }
+}
