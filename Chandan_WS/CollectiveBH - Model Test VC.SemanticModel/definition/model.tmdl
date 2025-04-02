@@ -87,11 +87,11 @@ queryGroup FACT\Marketing\MarketingLTV
 
 	annotation PBI_QueryGroupOrder = 1
 
-annotation PBI_QueryOrder = ["ServerName","DBName","Source","cfgRevenueVisits","cfgWeekDays","cfgWeekDayWts","cfgVisitRevBudget","cfgDailyBudget","cfgProvSched","vwEncounter","vwFacilitiesMaster","vwScheduleVisitDetails","vwResourceDetails","vwResourceDetails (2)","vwResourceDetails (3)","vwEncounterType","vwSummaryUtilizationByResource","vwSummaryUtilSchdByResource","vwVisitStatus","vwProviderCaseLoad","vwProviderMissingSchedule","vwProviderCategory","dimMarket","vwCollectiveLead","vwCollectiveLead - DQ","vwSumPaymentDetailExtended","vwChargeMasterExtended","vwCollectiveAccount","vwDailySales","vwLifetimeValue","cfgIndexMenu","vwDailySalesCombined","vwMktgwithLTV - raw","vwMktgwithLTV","Measures - model","z_RefreshDate","vwCollectiveAccount (2)","vwClinicalAnalytics","vwLeadIntakeDashboard","vwLeadActivity","z_RefreshDate (UTC)","vwProviderMissingCategory","vwProviderSchedule_raw","vwProviderSchedule","vwProviderSchedule for Duration","vwProviderSchedule for Working Hours","vwProviderSchedule for 1615 RID","vwProviderSchedule for 1615 RID (2)","vwLeadActivity - FirstActivityDate","cfgAccountingReport","vwAccountDetails","vwBudget","dimClinic","dimDepartment","dimLocation","vwClaimAnalysisAddOn","vwClaimAnalysisDtl","vwPatientDisorders","EmrSfMatch_raw","EmrSfMatch","vwSumPaymentClaim","vwSumPaymentPosting","vwReferralConversion - raw","vwReferralConversion","vwCopay - raw","vwCopay","vwVisitIssueLog","PRV vwEncounterPayrollReduced","vwEncounterPayrollReduced","vwEncounterPayrollReducedCombined","vwEncounterPayroll - PRV","vwEncounterPayroll","cfgPayPeriodDetailed","vwVisitStatusIssues","vwClaimIssueLog","vwOperationsPerf","vwOperationsPerf2","vwOperationsPerf3","vwClaimDenials","vwPatientFollowUp","cfgOperationsPerformanceMetrics","vwPanelAge","vwPanelAvgVisits","vwPanelDisorders","vwPanelGender","vwPanelRetention","vwPanelTotals","vwPanelVisitType","vwPanelSurveys","vwLeadActivity - Cohort sort","vwProviderPatientBalance","vwProviderUtilization","vwCadence","vwLeadsByPriviaProvider","vwDailySalesCombinedByProvider","vwTalkDesk","vwOnLineScheduleOpenSlots","vwConvNotCplt","vwSumProviderTrend","DurationLookup","vwVisitCosignPending","vwProviderScheduleAnalytics","vwLeadActivityElapsedTime","vwVisitTrendByResourceNew","vwClaimIssuesDaySummary"]
+annotation PBI_QueryOrder = ["ServerName","DBName","Source","cfgRevenueVisits","cfgWeekDays","cfgWeekDayWts","cfgDailyBudget","cfgProvSched","vwEncounter","vwFacilitiesMaster","vwScheduleVisitDetails","vwResourceDetails","vwResourceDetails (2)","vwResourceDetails (3)","vwEncounterType","vwSummaryUtilizationByResource","vwSummaryUtilSchdByResource","vwVisitStatus","vwProviderCaseLoad","vwProviderMissingSchedule","vwProviderCategory","dimMarket","vwCollectiveLead","vwCollectiveLead - DQ","vwSumPaymentDetailExtended","vwChargeMasterExtended","vwCollectiveAccount","vwDailySales","vwLifetimeValue","vwDailySalesCombined","vwMktgwithLTV - raw","vwMktgwithLTV","Measures - model","z_RefreshDate","vwCollectiveAccount (2)","vwClinicalAnalytics","vwLeadIntakeDashboard","vwLeadActivity","z_RefreshDate (UTC)","vwProviderMissingCategory","vwProviderSchedule_raw","vwProviderSchedule","vwProviderSchedule for Duration","vwProviderSchedule for Working Hours","vwProviderSchedule for 1615 RID","vwProviderSchedule for 1615 RID (2)","vwLeadActivity - FirstActivityDate","cfgAccountingReport","vwAccountDetails","vwBudget","vwClaimAnalysisAddOn","vwClaimAnalysisDtl","vwPatientDisorders","EmrSfMatch_raw","EmrSfMatch","vwSumPaymentClaim","vwSumPaymentPosting","vwReferralConversion - raw","vwReferralConversion","vwCopay - raw","vwCopay","vwVisitIssueLog","PRV vwEncounterPayrollReduced","vwEncounterPayrollReduced","vwEncounterPayrollReducedCombined","vwEncounterPayroll - PRV","vwEncounterPayroll","cfgPayPeriodDetailed","vwVisitStatusIssues","vwClaimIssueLog","vwOperationsPerf","vwOperationsPerf2","vwOperationsPerf3","vwClaimDenials","vwPatientFollowUp","vwPanelAge","vwPanelAvgVisits","vwPanelDisorders","vwPanelGender","vwPanelRetention","vwPanelTotals","vwPanelVisitType","vwPanelSurveys","vwLeadActivity - Cohort sort","vwProviderPatientBalance","vwProviderUtilization","vwCadence","vwLeadsByPriviaProvider","vwDailySalesCombinedByProvider","vwTalkDesk","vwOnLineScheduleOpenSlots","vwConvNotCplt","vwSumProviderTrend","DurationLookup","vwVisitCosignPending","vwProviderScheduleAnalytics","vwLeadActivityElapsedTime","vwVisitTrendByResourceNew","vwClaimIssuesDaySummary"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.140.1577.0 (25.02)+00af0910c5ca19a229c472b0dfc17a2c488f6b0a
+annotation PBIDesktopVersion = 2.141.1253.0 (25.03)+74f9999a1e95f78c739f3ea2b96ba340e9ba8729
 
 annotation __TEdtr = 1
 
@@ -115,10 +115,8 @@ ref table LocalDateTable_200cebd6-6d5a-4345-abbf-eafa221567c2
 ref table vwSummaryUtilSchdByResource
 ref table LocalDateTable_ff2c886f-5afc-47c4-8fa9-558a38cfa664
 ref table LocalDateTable_2c5f47a5-761c-43a7-bccf-830803fd484f
-ref table Axis
 ref table vwVisitStatus
 ref table cfgWeekDayWts
-ref table cfgVisitRevBudget
 ref table z_RefreshDate
 ref table LocalDateTable_79c08bc8-df19-4a6c-ada2-0a1fa59bc1e3
 ref table 2_Date_Expander
@@ -147,7 +145,6 @@ ref table LocalDateTable_a09d4043-6db8-4543-8ce8-95c3e3063054
 ref table Parameter_Marketing
 ref table Parameter_MKTLTV_Dim
 ref table Parameter_MKTLTV_measures
-ref table cfgIndexMenu
 ref table vwDailySalesCombined
 ref table LocalDateTable_522031c5-ccb0-4890-8fd2-57c8cc8ba9e1
 ref table LocalDateTable_5f4144c6-8273-4a47-bd15-c0f9ceae8d6e
@@ -163,7 +160,6 @@ ref table LocalDateTable_65c472c1-e783-4a20-a4f3-f6f20920c114
 ref table LocalDateTable_f3c048a4-61c4-47c8-8527-0d5a900997ba
 ref table vwSumPaymentDetailExtended
 ref table LocalDateTable_17799199-c310-4dbb-9b1d-d70f09b4f5da
-ref table 'Calendar Business Days'
 ref table LocalDateTable_aed25d59-9d95-49c0-8a36-858e7cf5c3b7
 ref table LocalDateTable_c1c005c6-18e2-4466-8eba-d366f3958651
 ref table vwClinicalAnalytics
@@ -198,9 +194,6 @@ ref table LocalDateTable_e25997e3-a06d-4e55-9dee-6e8cd7e7c438
 ref table dimDate_ResourceDetails
 ref table LocalDateTable_77aaee5b-85dc-441c-b84d-29c50236cb78
 ref table vwBudget
-ref table dimClinic
-ref table dimDepartment
-ref table dimLocation
 ref table LocalDateTable_5fdc2bd9-98b3-47c5-bd76-85797c65c878
 ref table vwClaimAnalysisAddOn
 ref table vwClaimAnalysisDtl
@@ -237,7 +230,6 @@ ref table LocalDateTable_65f39b36-4332-47dc-bc8a-85173a28bfb0
 ref table vwPatientFollowUp
 ref table LocalDateTable_08d5342f-d308-4892-9856-f7f584d58157
 ref table LocalDateTable_9e968f9b-6bd0-4f34-8255-2140b44d33f2
-ref table cfgOperationsPerformanceMetrics
 ref table LocalDateTable_e162794e-77e3-4d17-8576-1d21e1c6f09a
 ref table LocalDateTable_ffeaa976-af3f-413f-aeac-52a662730d8e
 ref table LocalDateTable_7cb0188e-7dae-4d34-bb98-1951b57d6334

@@ -2003,23 +2003,6 @@ table 'Measures - model'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Average Daily Gross Charges' = [Gross Charges] / [Business Days]
-		displayFolder: _RCM
-		lineageTag: 4d5da9cf-1ebd-477b-af5a-8aea4d43c3cf
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Business Days' =
-			
-			CALCULATE(
-			    SUM('Calendar Business Days'[Business Day]),
-			    FILTER('Calendar Business Days','Calendar Business Days'[Date]<TODAY())
-			    )
-		displayFolder: _RCM
-		lineageTag: 766cc0a0-3067-4ab1-9691-688f7acd3a1a
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	measure DAR = ```
 			
 			
@@ -4768,12 +4751,6 @@ table 'Measures - model'
 			```
 		displayFolder: _RCM
 		lineageTag: 8388ec4b-20a3-437d-81f7-26e152b50645
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Average Daily Net' = [Expected Amount] / [Business Days]
-		displayFolder: _RCM
-		lineageTag: a819cdd9-a338-4b19-8f65-3f5d61f03a4f
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
